@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToorFood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="container-header">
+            <div id="logo">
+                <img src="Imágenes/Logo.png" alt="Logo ToorFood" width="60">
+                <h1>ToorFood</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Frutas</a></li>
+                    <li><a href="#">Vegetales</a></li>
+                    <li><a href="#">Buscar</a></li>
+                    <li><a href="#">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+            <div id="carrito">🛒</div>
+        </div>
+    </header>
+
+    <!-- INTRO -->
+<section id="intro">
+    <div class="intro-container">
+        <div class="intro-texto">
+            <h2>Bienvenido a ToorFood</h2>
+            <p>
+                En <strong>ToorFood</strong> nos apasiona ofrecerte productos naturales, frescos y de la mejor calidad. 
+                Trabajamos directamente con agricultores locales para garantizar que cada fruta y vegetal que llega a tu mesa
+                conserve su sabor, color y propiedades nutritivas.
+            </p>
+            <p>
+                Nuestra misión es hacer tus compras más fáciles y seguras, brindándote una plataforma práctica donde puedes elegir tus productos favoritos,
+                hacer tu pedido en pocos minutos y recibirlo en casa sin complicaciones.  
+                Comer sano nunca fue tan simple ni tan delicioso.
+            </p>
+        </div>
+
+        <div class="intro-imagen">
+            <img src="Imágenes/Imágen2.jpg" alt="Frutas y vegetales" width="300">
+        </div>
+
+        <div class="intro-formulario">
+            <form id="pedido-form">
+    <h3>Formulario de pedido</h3>
+
+    <label for="productos">¿Qué productos desea?</label><br>
+    <input type="text" id="productos" name="productos" placeholder="Ej: Manzanas, zanahorias..."><br><br>
+
+    <label for="kilos">¿Cuántos kilos?</label><br>
+    <input type="number" id="kilos" name="kilos" min="1" placeholder="Ej: 2"><br><br>
+
+    <button type="submit">Enviar pedido</button>
+</form>
+        </div>
+    </div>
+</section>
+
+<!-- ==== POPIN FLOTANTE ==== -->
+<div id="popin">
+  💬
+</div>
+
+<div id="mini-ventana" class="oculto">
+  <div class="ventana-contenido">
+    <p><strong>¡Hola! 👋</strong><br>¿Necesitas ayuda con tu pedido?</p>
+    <button id="cerrar-ventana">Cerrar</button>
+  </div>
+</div>
+
+    <!-- OPCIONES -->
+    <section id="informacion">
+        <h2>Opciones extras</h2>
+        <div class="info-container">
+            <div class="info-item">
+                <img src="Imágenes/Descuentos.png" alt="Descuentos" width="80"><br>
+                <button>Descuentos</button>
+            </div>
+            <div class="info-item">
+                <img src="Imágenes/Delivery.png" alt="Delivery" width="80"><br>
+                <button>Delivery</button>
+            </div>
+            <div class="info-item">
+                <img src="Imágenes/Atención al cliente.png" alt="Atención al cliente" width="80"><br>
+                <button>Atención al cliente</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-container">
+
+            <!-- Frutas -->
+            <div class="producto"><img src="Imágenes/manzana.jpg" alt="Manzana"><h3>Manzana</h3><p>S/3.50 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/platano.jpg" alt="Plátano"><h3>Plátano</h3><p>S/2.80 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/fresa.jpg" alt="Fresas"><h3>Fresas</h3><p>S/5.00 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/naranja.jpg" alt="Naranja"><h3>Naranja</h3><p>S/2.90 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/Sandía.jpg" alt="Sandía"><h3>Sandía</h3><p>S/1.80 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/Piña.jpg" alt="Piña"><h3>Piña</h3><p>S/3.20 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/uva.jpg" alt="Uva"><h3>Uva</h3><p>S/4.80 por kilo</p></div>
+
+            <!-- Vegetales -->
+            <div class="producto"><img src="Imágenes/zanahoria.jpg" alt="Zanahoria"><h3>Zanahoria</h3><p>S/2.50 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/tomate.jpg" alt="Tomate"><h3>Tomate</h3><p>S/3.00 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/lechuga.jpg" alt="Lechuga"><h3>Lechuga</h3><p>S/1.50 por unidad</p></div>
+            <div class="producto"><img src="Imágenes/pepino.jpg" alt="Pepino"><h3>Pepino</h3><p>S/2.20 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/papa.jpg" alt="Papa"><h3>Papa</h3><p>S/1.80 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/cebolla.jpg" alt="Cebolla"><h3>Cebolla</h3><p>S/2.00 por kilo</p></div>
+            <div class="producto"><img src="Imágenes/pimiento.jpg" alt="Pimiento"><h3>Pimiento</h3><p>S/3.60 por kilo</p></div>
+
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>Síguenos en redes</h3>
+                <p>Facebook | Twitter | YouTube</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Correo | WhatsApp</p>
+            </div>
+        </div>
+        <p>© 2025 ToorFood - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        document.getElementById('pedido-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const producto = document.getElementById('productos').value;
+            const kilos = document.getElementById('kilos').value;
+            if (producto && kilos > 0) {
+                alert('Pedido enviado correctamente.');
+                this.reset();
+            } else {
+                alert('Por favor, complete todos los campos.');
+            }
+        });
+    </script>
+<!-- MODAL DE INFORMACIÓN DEL PRODUCTO -->
+<div id="modal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <img id="modal-imagen" src="" alt="Producto" />
+        <h3 id="modal-nombre"></h3>
+        <p id="modal-precio"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
